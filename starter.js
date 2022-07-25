@@ -370,7 +370,7 @@ checkWinner(scoreDolphins, scoreKoalas);
 
 //Array
 const friends1 = ['Rasel', 'AL-Islam', 'Mohi'];
-console.log(friends1);
+console.log("Friends: " + friends1);
 
 const semesters = new Array(1, 2, 3, 4, 5, 6, 7, 8);
 console.log(semesters);
@@ -397,8 +397,6 @@ console.log(me.length);
 console.log(friends1)
 
 
-
-
 //Adding Element in array
 friends1.push('Mohi');//Adding element in the last of an Array
 console.log(friends1);
@@ -407,8 +405,6 @@ console.log('size of New firends1 Array = ' + newLengthm);
 
 friends1.unshift('Shaful');//adding element in the begining of an Array
 console.log(friends1);
-
-
 
 
 //Removing elements from Arrays
@@ -463,6 +459,8 @@ const jonasArray = [
     ['Rasel', 'Peter', "Steven"]
 ];
 
+console.log(jonasArray);
+
 const jonas = {
     firstName: 'Ismail',
     lastName: 'Hossain',
@@ -471,9 +469,10 @@ const jonas = {
     friends: ['Rasel', 'Peter', "Steven"]
 };
 
+
 console.log(jonas);
 
-//Dot notation vs Bracket Notation
+/*/Dot notation vs Bracket Notation
 console.log(jonas.friends);
 console.log(jonas.firstName);
 
@@ -503,4 +502,53 @@ console.log(jonas);
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends and his best friend is ${jonas.friends[0]}!`);
 
 console.log("Ismail");
-console.log("Sabbir");
+console.log("Sabbir");*/
+
+
+//Dot and Bracket Notation
+const mates = {
+    firstName: "Ismail",
+    lastName: "Hossain",
+    roll: 20123811,
+    reg: 9328,
+    cgpa: [3.69, 3.81, 3.76]
+
+}
+
+console.log(mates);
+console.log(mates.cgpa);//Dot notation
+console.log(mates['cgpa']);//Bracket Notation
+
+const nameV = "Name";
+console.log(mates['first' + nameV]);//Bracket Notation can use another variable nameV
+console.log(mates['last' + nameV]); //Bracket Notation can use another variable nameV
+
+//console.log(mates.'last' + nameV);//It doesn't work in Dot(.) Notation
+
+//const interest = prompt("What do you want to know about Ismail choose between firstName, lastName, cgpa, roll or reg")
+
+const interest = 'roll';
+console.log("Your choice is: " + interest);
+console.log(mates.interest);//Cuz of Dot notation, it doesn't work
+console.log(mates[interest]);
+
+if (mates[interest]) {
+    console.log(`Ismail ${interest} is:
+    ${mates[interest]}`)
+} else {
+    console.log("Your choice didn't match!!! Please choose among firstName, lastName, cgpa, roll or reg!")
+}
+
+mates.location = 'Bangladesh';
+mates['github'] = "IsmailLGUD";
+console.log(mates);
+
+//Coding Challenge
+//"John has 3 friends and His best friend is Rock"
+
+const bFriend = {
+    firstName1: "John",
+    friends: ["Brock", "Rock", "Lesner"]
+}
+
+console.log(`${bFriend.firstName1} has ${bFriend.friends.length} friends and His best friend is ${bFriend.friends[1]}!!!!`)
