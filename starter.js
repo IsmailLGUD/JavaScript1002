@@ -551,4 +551,26 @@ const bFriend = {
     friends: ["Brock", "Rock", "Lesner"]
 }
 
-console.log(`${bFriend.firstName1} has ${bFriend.friends.length} friends and His best friend is ${bFriend.friends[1]}!!!!`)
+console.log(`${bFriend.firstName1} has ${bFriend.friends.length} friends and His best friend is ${bFriend.friends[1]}!!!!`);
+
+
+
+//Object Method
+const mates1 = {
+    firstName: "Ismail",
+    lastName: "Hossain",
+    roll: 20123811,
+    reg: 9328,
+    cgpa: [3.69, 3.81, 3.76],
+    BD: 2000,
+    hasDriversLicense3: true,
+
+    calAge: function (BD) {
+        return 2022 - BD;
+    }
+
+};
+
+
+console.log(mates1.calAge(2000));
+console.log(mates1['calAge'](2004));
