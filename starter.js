@@ -574,3 +574,6 @@ const mates1 = {
 
 console.log(mates1.calAge(2000));
 console.log(mates1['calAge'](2004));
+
+
+console.log("I am a student!");
