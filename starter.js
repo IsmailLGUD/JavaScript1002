@@ -579,4 +579,4 @@ console.log(mates1['calAge'](2004));
 console.log("I am a student!");
 console.log("I am a student!");
 
-console.log("We are learning!");
+console.log("We are learning!")
