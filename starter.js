@@ -571,9 +571,26 @@ const mates1 = {
 
 };
 
+console.log("age = " + mates1.calAge());
+console.log("age = " + mates1.calAge(2001));
+console.log("Year = " + mates1['calAge'](2002));
 
-console.log(mates1.calAge(2000));
-console.log(mates1['calAge'](2004));
 
+const mates2 = {
+    firstName: "Ismail",
+    lastName: "Hossain",
+    roll: 20123811,
+    reg: 9328,
+    cgpa: [3.69, 3.81, 3.76],
+    BD: 2000,
+    hasDriversLicense3: true,
 
-console.log("I am a student!");
+    calAge: function (BD) {
+        return 2022 - this.BD;
+    }
+
+};
+
+console.log("age2 = " + mates2.calAge());
+console.log("age2 = " + mates2.calAge(2001));
+console.log("Year2 = " + mates2['calAge'](2002));
