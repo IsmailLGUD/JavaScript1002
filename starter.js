@@ -594,3 +594,5 @@ const mates2 = {
 console.log("age2 = " + mates2.calAge());
 console.log("age2 = " + mates2.calAge(2001));
 console.log("Year2 = " + mates2['calAge'](2002));
+
+ 
