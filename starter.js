@@ -650,10 +650,15 @@ if (John01.bmi > Mark01.bmi) {
     console.log(`${John01.fullName} has more BMI!!!`);
 } else {
     console.log(`${Mark01.fullName} has the largest BMI!!!`)
-}
+};
 
 
 //using of for loop
-for (let i = 0; i < 10; i++) {
+for (let i = 1; i < 11; i++) {
     console.log(`Practise ${i} times!!!`);
+};
+
+//Looping Arrays
+for (let i = 0; i < friends1.length; i++) {
+    console.log(i, friends1[i], typeof friends1[i]);
 }
