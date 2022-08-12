@@ -595,4 +595,27 @@ console.log("age2 = " + mates2.calAge());
 console.log("age2 = " + mates2.calAge(2001));
 console.log("Year2 = " + mates2['calAge'](2002));
 
- 
+//Coding Challenge
+const Ismail = {
+    firstName: "Ismail",
+    lastName: "Hossain",
+    roll: 20123811,
+    reg: 9328,
+    cgpa: [3.69, 3.81, 3.76],
+    BD: 2000,
+    hasDriversLicense3: true,
+
+    calAge: function (BD) {
+        return 2022 - this.BD;
+    },
+
+    getSummery: function () {
+        return `${this.firstName} is  ${this.calAge}`;
+    }
+
+};
+
+console.log(Ismail.getSummery());
+
+
+
