@@ -619,3 +619,35 @@ console.log(Ismail.getSummery());
 
 
 
+//Object Coding Challenge#3
+const Mark01 = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+};
+
+const John01 = {
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2;
+        return this.bmi;
+    }
+};
+
+Mark01.calcBMI();
+console.log("Mark BMI is: " + Mark01.bmi);
+
+John01.calcBMI();
+console.log("John BMI is: " + John01.bmi);
+
+if (John01.bmi > Mark01.bmi) {
+    console.log(`${John01.fullName} has more BMI!!!`);
+} else {
+    console.log(`${Mark01.fullName} has the largest BMI!!!`)
+}
