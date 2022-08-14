@@ -655,10 +655,51 @@ if (John01.bmi > Mark01.bmi) {
 
 //using of for loop
 for (let i = 1; i < 11; i++) {
-    console.log(`Practise ${i} times!!!`);
+    console.log(`${i} Practise ${i} times!!!`);
 };
 
-//Looping Arrays
+
+//Looping Arrays+ Filling an Array
+const types = [];
 for (let i = 0; i < friends1.length; i++) {
     console.log(i, friends1[i], typeof friends1[i]);
+
+    types[i] = friends1[i];//Filling from friends1
+    //types[i] = typeof friends1[i];
+    types.push("Ismail");
+}
+
+console.log(`types = ${types}`);
+
+
+
+const years = [1999, 2000, 2003, 2004];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2022 - years[i]);//pushing value of years to ages array
+}
+
+console.log(`ages are : ${ages} years old boys`);
+
+
+//contine and break statement
+const names = ['Ismail', 12, 13, 14, 15, true, "Rasel", "Mohi", "Shakil"];
+
+//Continue statement
+console.log("ONLY___ NUMBERs!!!");
+for (let i = 0; i < names.length; i++) {
+
+    if (typeof names[i] !== 'number') continue;
+
+    console.log(` ${names[i]} ${typeof names[i]} `);
+}
+
+//Break Statement
+console.log("-----Break WITH NUMBERS!!!____");
+for (let i = 0; i < names.length; i++) {
+
+    if (typeof names[i] !== 'string') break;
+
+    console.log(` ${names[i]} ${typeof names[i]} `);
 }
