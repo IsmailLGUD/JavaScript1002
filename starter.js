@@ -732,4 +732,38 @@ for (let exercise = 1; exercise < 4; exercise++) {
     }
 }
 
+//While Loop
+//Here for loops exists for comparision
 
+
+let i = 1;
+while (i < 11) {
+    console.log(`${i}. Solve ${i} times!!!`);
+    i++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+
+while (dice !== 6) {
+    console.log(`You rolled a ${dice}!`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+}
+
+
+//Coding #4
+const calcTip04 = function (bill04) {
+    return bill04 >= 50 && bill04 <= 300 ? bill04 * 0.15 : bill04 * 0.2;
+}
+
+const bill04 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips04 = [];
+const totals04 = [];
+
+for (let i = 0; i < bill04.length; i++) {
+    const tip = calcTip04(bill04[i]);
+    tips04.push(tip);
+    totals04.push(tip + bill04[i]);
+}
+console.log(`bills= ${bill04}, tips= ${tips04}, totals= ${totals04}`)
