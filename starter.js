@@ -687,7 +687,7 @@ console.log(`ages are : ${ages} years old boys`);
 const names = ['Ismail', 12, 13, 14, 15, true, "Rasel", "Mohi", "Shakil"];
 
 //Continue statement
-console.log("ONLY___ NUMBERs!!!");
+console.log("ONLY------ NUMBERs!!!");
 for (let i = 0; i < names.length; i++) {
 
     if (typeof names[i] !== 'number') continue;
@@ -696,10 +696,40 @@ for (let i = 0; i < names.length; i++) {
 }
 
 //Break Statement
-console.log("-----Break WITH NUMBERS!!!____");
+console.log("-----Break WITH NUMBERS!!!-----");
 for (let i = 0; i < names.length; i++) {
 
     if (typeof names[i] !== 'string') break;
 
     console.log(` ${names[i]} ${typeof names[i]} `);
+};
+
+const group = [
+    'Ismail',
+    'Mahdi',
+    "Rasel",
+    2022 - 2000,
+    ['Micheal', 'Solaiman']
+];
+
+//reverse printing
+for (let i = group.length - 1; i >= 0; i--) {
+    console.log(group[i]);
 }
+
+
+//consecutive printing values
+for (let i = 0; i < group.length; i++) {
+    console.log(group[i]);
+}
+
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`----Starting Exercise-1 ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Lifting weight repetition ${rep}`);
+    }
+}
+
+
